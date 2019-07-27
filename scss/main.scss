@@ -1,0 +1,57 @@
+body{
+  background: #000000;
+}
+.loginheader{
+  height: 10vh;
+}
+.logologin{
+  width: 45%;
+  display: block;
+}
+.logosplash{
+  width: 100px;
+}
+#form{
+  padding-left: 25%;
+  padding-right: 25%;
+  text-align: center;
+}
+.loginheader, footer, #logo, #form, #formhidden{
+  background: #ffffff;
+  padding-bottom: 30px;
+}
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  opacity: .5;
+  &:before {
+    content: '';
+    background: #000000;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    opacity: .5;
+  }
+  &:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    color: black;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    background-color: #ffffff;
+  }
+}
+#formhidden{
+  visibility: hidden;
+}
+.paddingBottom{
+  padding-bottom: 100vh;
+}

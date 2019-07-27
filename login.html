@@ -1,3 +1,4 @@
+<!-- login.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,11 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Cascading StyleSheets -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
     <title>Bootstrap</title>
 </head>
-<body>
+<body id="login">
 <div class="container">
+    <header class="container loginheader">
+        <div class="container">
+            <h1 class="invisible"> OllieOllie </h1>
+        </div><!-- logo -->
+    </header>
+    <div class="container" id="logo">
+        <a id="splash" href="index.html"><img class="mx-auto logologin" src="images/Image%201.png" alt="Ollie Ollie logo"></a>
+    </div>
+
+
+    <form id="form" class="container">
+        <fieldset class="form-group">
+            <div class="form-group mb-3">
+                <label class="form-control-label sr-only ">Email</label>
+                <input class="form-control text-center " type="email" name="task" id="email" class="required reset" placeholder="Email" required/>
+            </div><!-- form-group -->
+            <div class="form-group mb-3">
+                <label class="form-control-label sr-only">Password</label>
+                <input class="form-control text-center" type="password" name="password" id="password" class="required reset" placeholder="Password" required/>
+            </div><!-- form-group -->
+            <div class="form-group mb-5">
+                <button class="bg-secondary text-white form-control" class="submit" type="submit">Sign In</button>
+            </div><!-- form-group -->
+        </fieldset>
+        <div>
+            <hr class="mx-auto mb-5 form-text text-muted hr-text" data-content="Or"></hr>
+        </div><!-- form-text -->
+            <ul>
+                <li><a class="text-danger text-decoration-none" id="account" href="#">Don't have an account?</a></li>
+                <li><a class="text-dark text-decoration-none" id="sign" href="#">Sign Up</a></li>
+
+            </ul>
+    </form>
+    <form id="formhidden" class="container">
+        <fieldset class="form-group">
+            <div class="form-group mb-3">
+                <label class="form-control-label sr-only">Email</label>
+                <input class="form-control text-center" type="email" name="task" id="emailhidden" class="required reset" placeholder="Email" required/>
+            </div><!-- form-group -->
+            <div class="form-group mb-3">
+                <label class="form-control-label sr-only">Password</label>
+                <input class="form-control text-center" type="password" name="password" id="passwordhidden" class="required reset" placeholder="Password" required/>
+            </div><!-- form-group -->
+            <div class="form-group mb-3">
+                <label class="form-control-label sr-only">State</label>
+                <input class="form-control text-center" type="text" name="text" id="statehidden" class="required reset" placeholder="State" required/>
+            </div><!-- form-group -->
+            <div class="form-group mb-3">
+                <label class="form-control-label sr-only">Address</label>
+                <input class="form-control text-center" type="address" name="address" id="addresshidden" class="required reset" placeholder="Address" required/>
+            </div><!-- form-group -->
+            <div class="form-group mb-5">
+                <button class="form-control" class="submit" type="submit">Sign In</button>
+            </div><!-- form-group -->
+        </fieldset>
+    </form>
+    <footer class="invisible">
+
+    </footer>
+
 
 </div><!-- container -->
 
