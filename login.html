@@ -10,8 +10,8 @@
     <!-- Cascading StyleSheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hcf2ulo.css">
     <link rel="stylesheet" href="css/main.css">
-
 
     <title>Bootstrap</title>
 </head>
@@ -20,68 +20,78 @@
     <header class="container loginheader">
         <div class="container">
             <h1 class="invisible"> OllieOllie </h1>
-        </div><!-- logo -->
+        </div><!-- container -->
     </header>
     <div class="container" id="logo">
         <a id="splash" href="index.html"><img class="mx-auto logologin" src="images/Image%201.png" alt="Ollie Ollie logo"></a>
-    </div>
-
-
+    </div><!-- container -->
     <form id="form" class="container">
         <fieldset class="form-group">
             <div class="form-group mb-3">
                 <label class="form-control-label sr-only ">Email</label>
-                <input class="form-control text-center " type="email" name="task" id="email" class="required reset" placeholder="Email" required/>
+                <input class="form-control text-center font-weight-bold" type="email" name="task" id="email" placeholder="Email" required/>
             </div><!-- form-group -->
             <div class="form-group mb-3">
                 <label class="form-control-label sr-only">Password</label>
-                <input class="form-control text-center" type="password" name="password" id="password" class="required reset" placeholder="Password" required/>
+                <input class="form-control text-center font-weight-bold" type="password" name="password" id="password" placeholder="Password" required/>
             </div><!-- form-group -->
             <div class="form-group mb-5">
-                <button class="bg-secondary text-white form-control" class="submit" type="submit">Sign In</button>
+                <button class="text-white btn-secondary form-control btn btn-block submit text-center align-self-center font-weight-bold" type="submit">Sign In</button>
             </div><!-- form-group -->
         </fieldset>
         <div>
             <hr class="mx-auto mb-5 form-text text-muted hr-text" data-content="Or"></hr>
         </div><!-- form-text -->
             <ul>
-                <li><a class="text-danger text-decoration-none" id="account" href="#">Don't have an account?</a></li>
-                <li><a class="text-dark text-decoration-none" id="sign" href="#">Sign Up</a></li>
-
+                <li><a class="text-danger text-decoration-none h3 mb-4" id="changetext" data-toggle="modal" href="#signupmodal">Don't have an account?</a></li>
+                <li><a class="text-dark text-decoration-none h1 font-weight-bold mb-4" data-toggle="modal" href="#signupmodal">Sign Up</a></li>
             </ul>
-    </form>
-    <form id="formhidden" class="container">
-        <fieldset class="form-group">
-            <div class="form-group mb-3">
-                <label class="form-control-label sr-only">Email</label>
-                <input class="form-control text-center" type="email" name="task" id="emailhidden" class="required reset" placeholder="Email" required/>
-            </div><!-- form-group -->
-            <div class="form-group mb-3">
-                <label class="form-control-label sr-only">Password</label>
-                <input class="form-control text-center" type="password" name="password" id="passwordhidden" class="required reset" placeholder="Password" required/>
-            </div><!-- form-group -->
-            <div class="form-group mb-3">
-                <label class="form-control-label sr-only">State</label>
-                <input class="form-control text-center" type="text" name="text" id="statehidden" class="required reset" placeholder="State" required/>
-            </div><!-- form-group -->
-            <div class="form-group mb-3">
-                <label class="form-control-label sr-only">Address</label>
-                <input class="form-control text-center" type="address" name="address" id="addresshidden" class="required reset" placeholder="Address" required/>
-            </div><!-- form-group -->
-            <div class="form-group mb-5">
-                <button class="form-control" class="submit" type="submit">Sign In</button>
-            </div><!-- form-group -->
-        </fieldset>
-    </form>
-    <footer class="invisible">
-
-    </footer>
-
-
+    </form><!-- form container -->
+    <form class="modal fade" id="signupmodal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title w-100 font-weight-bold">Create an account.</h5>
+                    <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div><!-- modal-header -->
+                <div class="modal-body">
+                        <fieldset class="form-group md-form">
+                            <div class="form-group mb-3">
+                                <i class="fas fa-envelope prefix grey-text"></i>
+                                <label class="form-control-label sr-only">Email</label>
+                                <input class="form-control text-center font-weight-bold" type="email" name="task" id="emailhidden" class="required reset" placeholder="Email" required/>
+                            </div><!-- form-group -->
+                            <div class="form-group mb-3 ">
+                                <label class="form-control-label sr-only">Password</label>
+                                <input class="form-control text-center font-weight-bold" type="password" name="password" id="passwordhidden" class="required reset" placeholder="Password" required/>
+                            </div><!-- form-group -->
+                            <div class="form-group mb-3 align-content-center">
+                                <label class="form-control-label sr-only">State</label>
+                                <input class="form-control text-center font-weight-bold" type="text" name="text" id="statehidden" class="required reset" placeholder="State" required/>
+                            </div><!-- form-group -->
+                            <div class="form-group mb-3 align-content-center">
+                                <label class="form-control-label sr-only">Address</label>
+                                <input class="form-control text-center font-weight-bold" type="address" name="address" id="addresshidden" class="required reset" placeholder="Address" required/>
+                            </div><!-- form-group -->
+                            <div class="form-group mb-5 align-content-center">
+                                <button class="btn btn-block bg-secondary text-white form-control submit text-center font-weight-bold" type="submit">Sign In</button>
+                            </div><!-- form-group -->
+                        </fieldset>
+                </div><!-- modal-body -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+                </div><!-- modal-footer -->
+            </div><!-- modal-content -->
+        </div><!-- modal fade -->
+    </form><!-- modal form -->
+    <footer id="logincontainer"></footer>
 </div><!-- container -->
 
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

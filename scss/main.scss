@@ -1,24 +1,54 @@
-body{
+
+/* typography
+h2{
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h3, h4, h5{
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+button, input, a{
+  font-family: futura-pt-condensed, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+*/
+/* multi use */
+
+
+body, #carousel{
   background: #000000;
 }
-.loginheader{
-  height: 10vh;
+.item{
+  text-align: center;
+  width:30rem;
 }
-.logologin{
-  width: 45%;
-  display: block;
+
+/* forms */
+.paddingBottom{
+  padding-bottom: 100vh;
 }
-.logosplash{
-  width: 100px;
+#signupmodal input, #form input{
+  background: #DEF2C9;
+  border-color: #DEF2C9;
+  opacity: .75;
+  &:focus, &:hover{
+    opacity: 1;
+  }
 }
+.backgroundgreen{
+  background: #DEF2C9;
+  border-color: #DEF2C9;
+}
+
+/* login page */
 #form{
   padding-left: 25%;
   padding-right: 25%;
   text-align: center;
-}
-.loginheader, footer, #logo, #form, #formhidden{
-  background: #ffffff;
-  padding-bottom: 30px;
 }
 .hr-text {
   line-height: 1em;
@@ -49,9 +79,33 @@ body{
     background-color: #ffffff;
   }
 }
-#formhidden{
-  visibility: hidden;
+.loginheader{
+  height: 25vh;
 }
-.paddingBottom{
-  padding-bottom: 100vh;
+#logincontainer{
+  height: 25vh;
+}
+.logologin{
+  width: 45%;
+  display: block;
+}
+.logosplash{
+  width: 100px;
+}
+.loginheader, #logincontainer, #logo, #form, #formhidden{
+  background: #ffffff;
+  padding-bottom: 30px;
+}
+
+/* index page */
+#preview{
+  background: #ffffff;
+}
+
+/* main page */
+@media screen and (min-width: 900px) {
+  .maxsearchwidth {
+    max-width: 300px;
+    align-content: end;
+  }
 }

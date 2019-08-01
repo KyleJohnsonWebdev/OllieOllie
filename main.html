@@ -10,14 +10,429 @@
     <!-- Cascading StyleSheets -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/hcf2ulo.css">
     <link rel="stylesheet" href="css/main.css">
 
     <title>Bootstrap</title>
 </head>
 <body>
-<div class="container">
+<header class="mb-4 pt-5 pb-5">
+    <div class="container">
+        <h1 class="mb-4 invisible">OllieOllie</h1>
+    </div>
+    <div class="mb-4 container">
+        <div class="mb-4 d-flex flex-column flex-sm-row">
+                <div class="container align-self-center text-white col-8 mx-auto">
+                    <img class="mb-4 logosplash mx-sm-auto mx-lg-0 mx-md-0 mx-auto"  src="images/OllieOllieWhite.png" alt="Ollie Ollie Logo">
+                </div><!-- container -->
+                <div class="container align-self-center d-flex">
+                    <div class="btn-group-lg w-100 justify-content-end mx-auto maxsearchwidth"  aria-label="Sign In">
+                        <div class="md-form mb-3 ">
+                            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        </div>
+                        <a class="btn btn-block btn-secondary " data-toggle="modal" href="#addmodal" aria-label="Add Skate Spot">Add Skate Spot</a>
+                    </div><!-- btn group -->
+                </div><!-- container -->
+        </div><!-- container -->
+    </div>
+</header>
+<form class="modal fade" id="addmodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Add skate spot.</h5>
+                <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div><!-- modal-header -->
+            <div class="modal-body">
+                <fieldset class="form-group">
+                    <div class="form-group mb-3">
+                        <label class="form-control-label sr-only">Spot title</label>
+                        <input class="form-control text-center" type="text" name="task" id="titlehidden" class="required reset" placeholder="Spot Title" required/>
+                    </div><!-- form-group -->
+                    <div class="form-group mb-3">
+                        <label class="form-control-label sr-only">Bust Factor</label>
+                        <input class="form-control text-center" type="text" name="bustfactor" id="busthidden" class="required reset" placeholder="Bust Factor" required/>
+                    </div><!-- form-group -->
+                    <div class="form-group mb-3">
+                        <label class="form-control-label sr-only">Fun Score</label>
+                        <input class="form-control text-center" type="text" name="text" id="funhidden" class="required reset" placeholder="Fun Score" required/>
+                    </div><!-- form-group -->
+                    <div class="form-group mb-3">
+                        <label class="form-control-label sr-only">Address</label>
+                        <input class="form-control text-center" type="address" name="address" id="addresshidden" class="required reset" placeholder="Address" required/>
+                    </div><!-- form-group -->
+                    <div class="form-group mb-5">
+                        <button class="form-control" class="submit" type="submit">Add Skate Spot</button>
+                    </div><!-- form-group -->
+                </fieldset>
+            </div><!-- modal-body -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+            </div><!-- modal-footer -->
+        </div><!-- modal-content -->
+    </div><!-- modal fade -->
+</form><!-- modal form -->
 
-</div><!-- container -->
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <section class="card mb-5">
+                    <img class="card-img-top" src="images/stairset.png" alt="double set" data-toggle="modal" data-target="#doublesetmodal">
+                </section>
+            </div>
+            <div class="modal fade" id="doublesetmodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Double Set</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- modal-header -->
+                        <div class="modal-body">
+                            <section class="card mb-5 ">
+                                <a class="btn btn-block btn-danger w-100 mb-1" href="#" role="button">Delete Skate Spot</a>
+                                <img class="card-img-top" src="images/stairset.png" alt="double set">
+                                <div class="card-body backgroundgreen">
+                                    <h2 class="card-title">Double Set</h2>
+                                    <h5 class="card-subtitle mb-1">Bust Factor: 5</h5>
+                                    <h5 class="card-subtitle">Fun Score: 3</h5>
+                                </div>
+                                <a class="btn btn-block btn-dark w-100 mb-1" href="#" role="button">Directions</a>
+                            </section>
+                        </div><!-- modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div><!-- modal-footer -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <section class="card mb-5">
+                    <img class="card-img-top" src="images/parkinggarage.png" alt="garage ledge" data-toggle="modal" data-target="#garageledgemodal">
+                </section>
+            </div>
+            <div class="modal fade" id="garageledgemodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Garage Ledge</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- modal-header -->
+                        <div class="modal-body">
+                            <section class="card mb-5">
+                                <a class="btn btn-block btn-danger w-100 mb-1" href="#" role="button">Delete Skate Spot</a>
+                                <img class="card-img-top" src="images/parkinggarage.png" alt="garage ledge" data-toggle="modal" data-target="#garageledgemodal">
+                                <div class="card-body backgroundgreen">
+                                    <h2 class="card-title">Garage Ledge</h2>
+                                    <h5 class="card-subtitle mb-1">Bust Factor: 1</h5>
+                                    <h5 class="card-subtitle">Fun Score: 2</h5>
+                                </div>
+                                <a class="btn btn-block btn-dark w-100 mb-1" href="#" role="button">Directions</a>
+                            </section>
+                        </div><!-- modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div><!-- modal-footer -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <section class="card mb-5">
+                    <img class="card-img-top" src="images/bankwallride.png" alt="large wallride" data-toggle="modal" data-target="#largewallridemodal">
+                </section>
+            </div>
+            <div class="modal fade" id="largewallridemodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Large Wallride</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- modal-header -->
+                        <div class="modal-body">
+                            <section class="card mb-5">
+                                <a class="btn btn-block btn-danger w-100 mb-1" href="#" role="button">Delete Skate Spot</a>
+                                <img class="card-img-top" src="images/bankwallride.png" alt="large wallride">
+                                <div class="card-body backgroundgreen">
+                                    <h2 class="card-title">Large Wallride</h2>
+                                    <h5 class="card-subtitle mb-1">Bust Factor: 5</h5>
+                                    <h5 class="card-subtitle">Fun Score: 5</h5>
+                                </div>
+                                <a class="btn btn-block btn-dark w-100 mb-1" href="#" role="button">Directions</a>
+                            </section>
+                        </div><!-- modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div><!-- modal-footer -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <section class="card mb-5">
+                    <img class="card-img-top" src="images/curbledge.png" alt="small ledge" data-toggle="modal" data-target="#smallledge">
+                </section>
+            </div>
+            <div class="modal fade" id="smallledge">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Small Ledge</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- modal-header -->
+                        <div class="modal-body">
+                            <section class="card mb-5">
+                                <a class="btn btn-block btn-danger w-100 mb-1" href="#" role="button">Delete Skate Spot</a>
+                                <img class="card-img-top" src="images/curbledge.png" alt="small ledge">
+                                <div class="card-body backgroundgreen">
+                                    <h2 class="card-title">Small Ledge</h2>
+                                    <h5 class="card-subtitle mb-1">Bust Factor: 1</h5>
+                                    <h5 class="card-subtitle">Fun Score: 3</h5>
+                                </div>
+                                <a class="btn btn-block btn-dark w-100 mb-1" href="#" role="button">Directions</a>
+                            </section>
+                        </div><!-- modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div><!-- modal-footer -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <section class="card mb-5">
+                    <img class="card-img-top" src="images/curvedledge.png" alt="curved ledge" data-target="#curveledgemodal" data-toggle="modal">
+                </section>
+            </div>
+            <div class="modal fade" id="curveledgemodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Curved Ledge</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- modal-header -->
+                        <div class="modal-body">
+                            <section class="card mb-5">
+                                <a class="btn btn-block btn-danger w-100 mb-1" href="#" role="button">Delete Skate Spot</a>
+                                <img class="card-img-top" src="images/curvedledge.png" alt="curved ledge">
+                                <div class="card-body backgroundgreen">
+                                    <h2 class="card-title">Curved Ledge</h2>
+                                    <h5 class="card-subtitle mb-1">Bust Factor: 4</h5>
+                                    <h5 class="card-subtitle">Fun Score: 2</h5>
+                                </div>
+                                <a class="btn btn-block btn-dark w-100 mb-1" href="#" role="button">Directions</a>
+                            </section>
+                        </div><!-- modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div><!-- modal-footer -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <section class="card mb-5">
+                    <img class="card-img-top" src="images/flatgap.png" alt="flat gap" data-toggle="modal" data-target="#flatgapmodal">
+                </section>
+            </div>
+            <div class="modal fade" id="flatgapmodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Flat Gap</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- modal-header -->
+                        <div class="modal-body">
+                            <section class="card mb-5">
+                                <a class="btn btn-block btn-danger w-100 mb-1" href="#" role="button">Delete Skate Spot</a>
+                                <img class="card-img-top" src="images/flatgap.png" alt="flat gap">
+                                <div class="card-body backgroundgreen">
+                                    <h2 class="card-title">Flat Gap</h2>
+                                    <h5 class="card-subtitle mb-1">Bust Factor: 0</h5>
+                                    <h5 class="card-subtitle">Fun Score: 1</h5>
+                                </div>
+                                <a class="btn btn-block btn-dark w-100 mb-1" href="#" role="button">Directions</a>
+                            </section>
+                        </div><!-- modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div><!-- modal-footer -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <section class="card mb-5">
+                    <img class="card-img-top" src="images/fourstairrail.png" alt="four stair gap" data-target="#fourstairmodal" data-toggle="modal">
+                </section>
+            </div>
+            <div class="modal fade" id="fourstairmodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Four Stair Gap</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- modal-header -->
+                        <div class="modal-body">
+                            <section class="card mb-5">
+                                <a class="btn btn-block btn-danger w-100 mb-1" href="#" role="button">Delete Skate Spot</a>
+                                <img class="card-img-top" src="images/fourstairrail.png" alt="">
+                                <div class="card-body backgroundgreen">
+                                    <h2 class="card-title">Four Stair Gap</h2>
+                                    <h5 class="card-subtitle mb-1">Bust Factor</h5>
+                                    <h5 class="card-subtitle">Fun Score</h5>
+                                </div>
+                                <a class="btn btn-block btn-dark w-100 mb-1" href="#" role="button">Directions</a>
+                            </section>
+                        </div><!-- modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div><!-- modal-footer -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <section class="card mb-5">
+                    <img class="card-img-top" src="images/paintedcurb.png" alt="painted curb" data-toggle="modal" data-target="#paintedcurbmodal">
+
+                </section>
+            </div>
+            <div class="modal fade" id="paintedcurbmodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Painted Curb</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- modal-header -->
+                        <div class="modal-body">
+                            <section class="card mb-5">
+                                <a class="btn btn-block btn-danger w-100 mb-1" href="#" role="button">Delete Skate Spot</a>
+                                <img class="card-img-top" src="images/paintedcurb.png" alt="">
+                                <div class="card-body backgroundgreen">
+                                    <h2 class="card-title">Painted Curb</h2>
+                                    <h5 class="card-subtitle mb-1">Bust Factor: 0</h5>
+                                    <h5 class="card-subtitle">Fun Score: 5</h5>
+                                </div>
+                                <a class="btn btn-block btn-dark w-100 mb-1" href="#" role="button">Directions</a>
+                            </section>
+                        </div><!-- modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div><!-- modal-footer -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <section class="card mb-5">
+                    <img class="card-img-top" src="images/skatestop.png" alt="small ledge" data-target="#smallledgemodal" data-toggle="modal">
+                </section>
+            </div>
+            <div class="modal fade" id="smallledgemodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Small Ledge</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- modal-header -->
+                        <div class="modal-body">
+                            <section class="card mb-5">
+                                <a class="btn btn-block btn-danger w-100 mb-1" href="#" role="button">Delete Skate Spot</a>
+                                <img class="card-img-top" src="images/skatestop.png" alt="">
+                                <div class="card-body backgroundgreen">
+                                    <h2 class="card-title">Small Ledge</h2>
+                                    <h5 class="card-subtitle mb-1">Bust Factor: 0</h5>
+                                    <h5 class="card-subtitle">Fun Score: 3</h5>
+                                </div>
+                                <a class="btn btn-block btn-dark w-100 mb-1" href="#" role="button">Directions</a>
+                            </section>
+                        </div><!-- modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div><!-- modal-footer -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <section class="card mb-5">
+                    <img class="card-img-top" src="images/wallride.png" alt="small ledge" data-target="#wallridemodal" data-toggle="modal">
+                </section>
+            </div>
+            <div class="modal fade" id="wallridemodal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5>Wall Ride</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div><!-- modal-header -->
+                        <div class="modal-body">
+                            <section class="card mb-5">
+                                <a class="btn btn-block btn-danger w-100 mb-1" href="#" role="button">Delete Skate Spot</a>
+                                <img class="card-img-top" src="images/wallride.png" alt="">
+                                <div class="card-body backgroundgreen">
+                                    <h2 class="card-title">Wall Ride</h2>
+                                    <h5 class="card-subtitle mb-1">Bust Factor: 1</h5>
+                                    <h5 class="card-subtitle">Fun Score: 5</h5>
+                                </div>
+                                <a class="btn btn-block btn-dark w-100 mb-1" href="#" role="button">Directions</a>
+                            </section>
+                        </div><!-- modal-body -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div><!-- modal-footer -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- container -->
+
+</main>
+<footer>
+    <div class="container">
+        <div class="row justify-content-end">
+            <div class="btn-group-block w-100 mb-5 col-sm-4 col-12" aria-label="Sign In">
+                <a class="btn btn-block btn-dark w-100 maxsearchwidth" href="login.html" role="button">Log Out</a>
+            </div><!-- btn group -->
+        </div>
+    </div>
+
+</footer>
+
+<div class="modal fade" id="aboutmodal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">About.</h5>
+                <button type="button" class="close btn-danger" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div><!-- modal-header -->
+            <div class="modal-body">
+                <span>You can trust us. We have been around for a week. We love skateboarding!</span>
+            </div><!-- modal-body -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+            </div><!-- modal-footer -->
+        </div><!-- modal-content -->
+    </div><!-- modal fade -->
+</div><!-- modal form -->
+
 
 <script src="js/jquery.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
