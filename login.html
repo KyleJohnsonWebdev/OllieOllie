@@ -26,7 +26,7 @@
         <a id="splash" href="index.html"><img class="mx-auto logologin" src="images/Image%201.png" alt="Ollie Ollie logo"></a>
     </div><!-- container -->
     <form id="form" class="container">
-        <fieldset class="form-group">
+        <fieldset id="formgroup" class="form-group">
             <div class="form-group mb-3">
                 <label class="form-control-label sr-only ">Email</label>
                 <input class="form-control text-center font-weight-bold" type="email" name="task" id="email" placeholder="Email" required/>
@@ -35,12 +35,12 @@
                 <label class="form-control-label sr-only">Password</label>
                 <input class="form-control text-center font-weight-bold" type="password" name="password" id="password" placeholder="Password" required/>
             </div><!-- form-group -->
-            <div class="form-group mb-5">
-                <button class="text-white btn-secondary form-control btn btn-block submit text-center align-self-center font-weight-bold" type="submit">Sign In</button>
+            <div id="formgroup2" class="form-group mb-5">
+                <button id="signin" class="text-white btn-secondary form-control btn btn-block submit text-center align-self-center" type="submit">Sign In</button>
             </div><!-- form-group -->
         </fieldset>
         <div>
-            <hr class="mx-auto mb-5 form-text text-muted hr-text" data-content="Or"></hr>
+            <hr class="mx-auto mb-5 form-text text-muted hr-text" data-content="Or">
         </div><!-- form-text -->
             <ul>
                 <li><a class="text-danger text-decoration-none h3 mb-4" id="changetext" data-toggle="modal" href="#signupmodal">Don't have an account?</a></li>
@@ -61,19 +61,19 @@
                             <div class="form-group mb-3">
                                 <i class="fas fa-envelope prefix grey-text"></i>
                                 <label class="form-control-label sr-only">Email</label>
-                                <input class="form-control text-center font-weight-bold" type="email" name="task" id="emailhidden" class="required reset" placeholder="Email" required/>
+                                <input class="form-control text-center font-weight-bold" type="email" name="task" id="emailhidden" placeholder="Email" required/>
                             </div><!-- form-group -->
                             <div class="form-group mb-3 ">
                                 <label class="form-control-label sr-only">Password</label>
-                                <input class="form-control text-center font-weight-bold" type="password" name="password" id="passwordhidden" class="required reset" placeholder="Password" required/>
+                                <input class="form-control text-center font-weight-bold" type="password" name="password" id="passwordhidden" placeholder="Password" required/>
                             </div><!-- form-group -->
                             <div class="form-group mb-3 align-content-center">
                                 <label class="form-control-label sr-only">State</label>
-                                <input class="form-control text-center font-weight-bold" type="text" name="text" id="statehidden" class="required reset" placeholder="State" required/>
+                                <input class="form-control text-center font-weight-bold" type="text" name="text" id="statehidden" placeholder="State" required/>
                             </div><!-- form-group -->
                             <div class="form-group mb-3 align-content-center">
                                 <label class="form-control-label sr-only">Address</label>
-                                <input class="form-control text-center font-weight-bold" type="address" name="address" id="addresshidden" class="required reset" placeholder="Address" required/>
+                                <input class="form-control text-center font-weight-bold" type="text" name="address" id="addresshidden" placeholder="Address" required/>
                             </div><!-- form-group -->
                             <div class="form-group mb-5 align-content-center">
                                 <button class="btn btn-block bg-secondary text-white form-control submit text-center font-weight-bold" type="submit">Sign In</button>

@@ -1,21 +1,34 @@
-/* typography
-h2{
+/* typography*/
+h2, .h2 {
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
-}
-h3, h4, h5{
+  font-size: 2.25rem; }
+
+h3, .h3, h4, .h4, h5, .h5, #addmodal div div div h5 .h5 {
   font-family: futura-pt, sans-serif;
   font-weight: 400;
-  font-style: normal;
-}
-button, input, a{
+  font-style: normal; }
+
+h3, .h3 {
+  font-size: 2rem; }
+
+h4, .h4 {
+  font-size: 1.75rem; }
+
+h5, .h5, #addmodal div h5 {
+  font-size: 1.5rem; }
+
+.btn, #form #formgroup #formgroup2 #signin, button, input, a, .buttonstyle, #addmodal fieldset input, #addmodal fieldset button, header div #addskatespotbtn, header div #search {
   font-family: futura-pt-condensed, sans-serif;
   font-weight: 700;
   font-style: normal;
-}
-*/
+  font-size: 2rem; }
+
 /* multi use */
+.viz {
+  visibility: hidden; }
+
 body, #carousel {
   background: #000000; }
 
@@ -27,11 +40,12 @@ body, #carousel {
 .paddingBottom {
   padding-bottom: 100vh; }
 
-#signupmodal input, #form input {
+#signupmodal input, #form input, .green, #addskatespotbtn, #logout {
   background: #DEF2C9;
   border-color: #DEF2C9;
-  opacity: .75; }
-  #signupmodal input:focus, #signupmodal input:hover, #form input:focus, #form input:hover {
+  opacity: .75;
+  font-size: 3rem; }
+  #signupmodal input:focus, #signupmodal input:hover, #form input:focus, #form input:hover, .green:focus, .green:hover, #addskatespotbtn:focus, #addskatespotbtn:hover, #logout:focus, #logout:hover {
     opacity: 1; }
 
 .backgroundgreen {
@@ -39,7 +53,7 @@ body, #carousel {
   border-color: #DEF2C9; }
 
 /* login page */
-#form {
+#form, form {
   padding-left: 25%;
   padding-right: 25%;
   text-align: center; }
@@ -97,3 +111,22 @@ body, #carousel {
   .maxsearchwidth {
     max-width: 300px;
     align-content: end; } }
+
+@media screen and (max-width: 600px) {
+  #form, form {
+    padding-left: 5%;
+    padding-right: 5%; } }
+
+#addmodal fieldset input {
+  background: #C1BFA7;
+  border-color: #C1BFA7;
+  opacity: .5; }
+  #addmodal fieldset input:focus, #addmodal fieldset input:hover {
+    opacity: 1; }
+
+#addmodal fieldset button {
+  background: #F37060;
+  border-color: #F37060;
+  opacity: .5; }
+  #addmodal fieldset button:focus, #addmodal fieldset button:hover {
+    opacity: 1; }
